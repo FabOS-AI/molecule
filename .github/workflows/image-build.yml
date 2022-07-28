@@ -1,0 +1,14 @@
+name: Docker Images
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-push-molecule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build molecule image
+        working-directory: .
+        run: docker-compose build molecule
