@@ -1,8 +1,9 @@
 name: Docker Images
 
 on:
-  push:
-    branches: [main]
+  - workflow_dispatch
+  - push:
+      branches: [main]
 
 jobs:
   build-and-push-molecule:
