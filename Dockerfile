@@ -12,5 +12,6 @@ RUN python3 -m pip install \
     jmespath
 
 RUN ansible-galaxy install git+https://github.com/FabOS-AI/molecule_vsphere.git
+RUN ansible-galaxy collection install community.vmware:3.2.0
 
 CMD /bin/sh -c /bin/bash
