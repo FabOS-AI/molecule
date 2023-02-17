@@ -10,7 +10,8 @@ RUN python3 -m pip install \
     molecule[docker]==$MOLECULE_VERSION \
     ansible \
     jmespath \
-    pywinrm
+    pywinrm \
+    pypsrp
 
 RUN ansible-galaxy install git+https://github.com/FabOS-AI/molecule_vsphere.git
 #RUN ansible-galaxy collection install community.vmware:3.2.0
