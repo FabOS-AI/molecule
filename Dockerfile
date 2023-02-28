@@ -11,7 +11,8 @@ RUN python3 -m pip install \
     ansible \
     jmespath \
     pywinrm \
-    pypsrp
+    pypsrp \
+    requests-credssp==1.3.1
 
 RUN ansible-galaxy install git+https://github.com/FabOS-AI/molecule_vsphere.git
 #RUN ansible-galaxy collection install community.vmware:3.2.0
