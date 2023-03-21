@@ -2,7 +2,7 @@
 version: "3"
 services:
   molecule:
-    image: fabos4ai/molecule:4.0.1
+    image: fabos4ai/molecule:4.0.4
     build: .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
